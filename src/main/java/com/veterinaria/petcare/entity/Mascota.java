@@ -24,15 +24,6 @@ public class Mascota {
     public Mascota() {
     }
 
-    public Mascota(long id, String nombre, String especie, String raza, int fecha, Cita cita) {
-        this.id = id;
-        this.nombre = nombre;
-        this.especie = especie;
-        this.raza = raza;
-        this.fecha = fecha;
-        this.cita = cita;
-    }
-
     public long getId() {
         return id;
     }

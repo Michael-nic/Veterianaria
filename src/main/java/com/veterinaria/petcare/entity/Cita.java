@@ -17,16 +17,7 @@ public class Cita {
     private String diagnostico;
     private int costo;
 
-
     public Cita() {
-    }
-
-    public Cita(long id, int fecha, String motivo, String diagnostico, int costo) {
-        this.id = id;
-        this.fecha = fecha;
-        this.motivo = motivo;
-        this.diagnostico = diagnostico;
-        this.costo = costo;
     }
 
     public int getCosto() {

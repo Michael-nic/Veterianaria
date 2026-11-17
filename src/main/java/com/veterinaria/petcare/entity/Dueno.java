@@ -16,12 +16,14 @@ public class Dueno {
     private int telefono;
     private String email;
 
-    @ManyToOne
+    @OneToMany 
     @JoinColumn(name = "category_id")
     private Mascota mascota;
 
     public Dueno() {
     }
+
+    
 
     public long getId() {
         return id;
