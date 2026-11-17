@@ -18,9 +18,15 @@ import com.veterinaria.petcare.service.DuenoService;
 
 @RestController 
 @RequestMapping ("/api/dueno/")
-@CrossOrigin (origins = "http://localhost:5173/",
-        methods = { RequestMethod.GET, RequestMethod.POST
-})
+@CrossOrigin(
+    origins = "http://localhost:5173",
+    methods = {
+        RequestMethod.GET,
+        RequestMethod.POST,
+        RequestMethod.PUT,
+        RequestMethod.DELETE
+    }
+)
 public class DuenoController {
 
     private final DuenoService duenoService;

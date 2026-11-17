@@ -1,6 +1,7 @@
 package com.veterinaria.petcare.entity;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 public class Dueno {
@@ -16,9 +17,9 @@ public class Dueno {
     private int telefono;
     private String email;
 
-    @OneToMany 
-    @JoinColumn(name = "Mascota_id")
-    private Mascota mascota;
+    @OneToMany
+    @JoinColumn(name = "dueno_id")
+    private List<Mascota> mascotas;
 
     public Dueno() {
     }
@@ -63,11 +64,4 @@ public class Dueno {
         this.email = email;
     }
 
-    public Mascota getMascota() {
-        return mascota;
-    }
-
-    public void setMascota(Mascota mascota) {
-        this.mascota = mascota;
-    }
 }

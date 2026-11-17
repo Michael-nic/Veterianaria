@@ -14,7 +14,7 @@ import com.veterinaria.petcare.entity.Cita;
 import com.veterinaria.petcare.service.CitaService;
 
 @RestController 
-@RequestMapping ("/api/categories")
+@RequestMapping ("/api/citas")
 @CrossOrigin (origins = "http://localhost:5173/",
         methods = { RequestMethod.GET, RequestMethod.POST
         })
