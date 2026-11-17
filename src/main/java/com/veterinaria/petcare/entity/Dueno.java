@@ -17,13 +17,11 @@ public class Dueno {
     private String email;
 
     @OneToMany 
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "Mascota_id")
     private Mascota mascota;
 
     public Dueno() {
     }
-
-    
 
     public long getId() {
         return id;
